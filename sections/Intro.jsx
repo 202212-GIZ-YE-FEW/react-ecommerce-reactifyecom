@@ -19,9 +19,9 @@ export default function Intro() {
 		<>
 			<section>
 				<div className='container mx-auto'>
-					<div className='max-w-[1228px]'>
+					<div className='max-w-[1228px] mx-auto'>
 						<div className='grid grid-rows-2 grid-flow-col gap-8'>
-							<div className='row-span-2 relative w-full xl:mr-0 mr-2 flex items-center group'>
+							<div className='row-span-2 relative w-full xl:mr-0 mr-2 flex items-center group sm:w-auto'>
 								<Image
 									src={image1}
 									alt=''
@@ -170,8 +170,8 @@ export default function Intro() {
 										<Image
 											src='/icons/van.svg'
 											alt='Arrow right svg icon'
-											width={7}
-											height={11}
+											width={32}
+											height={32}
 										/>
 									</span>
 								</div>
@@ -190,8 +190,8 @@ export default function Intro() {
 										<Image
 											src='/icons/arrow-circle-left.svg'
 											alt='Arrow right svg icon'
-											width={7}
-											height={11}
+											width={32}
+											height={32}
 										/>
 									</span>
 								</div>
@@ -210,8 +210,8 @@ export default function Intro() {
 										<Image
 											src='/icons/pay.svg'
 											alt='Arrow right svg icon'
-											width={7}
-											height={11}
+											width={32}
+											height={32}
 										/>
 									</span>
 								</div>
@@ -230,8 +230,8 @@ export default function Intro() {
 										<Image
 											src='/icons/pay.svg'
 											alt='Arrow right svg icon'
-											width={7}
-											height={11}
+											width={32}
+											height={32}
 										/>
 									</span>
 								</div>

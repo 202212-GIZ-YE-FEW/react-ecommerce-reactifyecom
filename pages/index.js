@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-
+import ProductList from "../components/ProductsList";
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -21,8 +21,11 @@ export default function Home() {
 					rel='icon'
 					href='/favicon.ico'
 				/>
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+			<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 			</Head>
-			<main>Welcome Home!</main>
+			<div> <ProductList/></div>
+			{/* <main>Welcome Home!</main> */}
 		</>
 	)
 }

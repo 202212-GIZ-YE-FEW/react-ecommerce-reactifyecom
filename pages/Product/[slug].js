@@ -11,7 +11,7 @@ export default function ProductScreen() {
   useEffect(() => {
     async function fetchProduct() {
       try {
-        const res = await fetch(`https://fakestoreapi.com/productscd/${slug}`);
+        const res = await fetch(`https://fakestoreapi.com/products/${slug}`);
         const data = await res.json();
         setProduct(data);
       } catch (err) {

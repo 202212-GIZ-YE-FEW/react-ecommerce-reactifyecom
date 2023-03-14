@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Intro from '@/sections/Intro'
+import Products from '@/sections/Products'
 
 export default function Home() {
 	return (
@@ -19,8 +20,11 @@ export default function Home() {
 					href='/favicon.ico'
 				/>
 			</Head>
-			<main>Welcome Home!</main>
+			<main>
+				<h1>Welcome Home!</h1>{' '}
+			</main>
 			<Intro />
+			<Products />
 		</>
 	)
 }

@@ -1,8 +1,6 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import ProductList from "../components/ProductsList";
-const inter = Inter({ subsets: ['latin'] })
+import Intro from '@/sections/Intro'
+import Products from '@/sections/Products'
 
 export default function Home() {
 	return (
@@ -24,8 +22,11 @@ export default function Home() {
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
 			<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 			</Head>
-			<div> <ProductList/></div>
-			{/* <main>Welcome Home!</main> */}
+			<main>
+				<h1>Welcome Home!</h1>{' '}
+			</main>
+			<Intro />
+			<Products />
 		</>
 	)
 }

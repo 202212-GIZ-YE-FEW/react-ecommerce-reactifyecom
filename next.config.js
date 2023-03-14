@@ -1,6 +1,28 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+	reactStrictMode: true,
+	images: {
+		remotePatterns: [
+			{
+				protocol: 'https',
+				hostname: 'api.websolutionus.com',
+				port: '',
+				pathname: '/**',
+			
+			},{
+				protocol: 'https',
+				hostname: 'fakestoreapi.com',
+				port: '',
+				pathname: '/**',
+			},
+			{
+				protocol: 'https',
+				hostname: 'shopo-ecom.vercel.app',
+				port: '',
+				pathname: '/**',
+			}
+		],
+	},
 }
 
 module.exports = nextConfig

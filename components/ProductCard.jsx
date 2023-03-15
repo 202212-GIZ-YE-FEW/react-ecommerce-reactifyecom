@@ -11,8 +11,8 @@ export default function ProductCard({ name, image, price }) {
 					<Image
 						src={image}
 						alt={name}
-                        width={268}
-                        height={300}
+                        width={113}
+                        height={150}
 					/>
 				</div>
 				<div className='starts'>

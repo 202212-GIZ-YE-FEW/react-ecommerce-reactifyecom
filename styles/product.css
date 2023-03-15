@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /* .btncart {
+=======
+.btncart {
+>>>>>>> a227ad01d890b56cd9e40345f4a2d550a8c240d2
     margin: 0 0.5rem;
     padding: 0.5rem 0.75rem;
     border: none;
@@ -165,4 +169,8 @@
     .card {
         flex: 0 1 calc(25% - 1em);
     }
+<<<<<<< HEAD
 } */
+=======
+}
+>>>>>>> a227ad01d890b56cd9e40345f4a2d550a8c240d2

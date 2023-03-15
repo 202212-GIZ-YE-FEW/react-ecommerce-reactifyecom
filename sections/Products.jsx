@@ -8,8 +8,12 @@ export default function Products() {
 	return (
 		<div>
 			<h1 className='Popular'>
+<<<<<<< HEAD
 				
 				View More <i> <FontAwesomeIcon icon={fas}/> &#xf061;</i>
+=======
+				View More <i class='fas'>&#xf061;</i>
+>>>>>>> a227ad01d890b56cd9e40345f4a2d550a8c240d2
 			</h1>
 			<section className='list'>
 				<div className='card-cover'>

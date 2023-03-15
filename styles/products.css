@@ -30,6 +30,7 @@
 	width: 260px;
 	position: relative;
 	color: #1f1f1f;
+	
 }
 .card-cover {
 	margin: 1rem 0.5rem;
@@ -60,7 +61,7 @@
 
 .card Image {
 	width: 100%;
-	padding-bottom: 60px;
+	padding-bottom: 70px;
 }
 
 .Popular {

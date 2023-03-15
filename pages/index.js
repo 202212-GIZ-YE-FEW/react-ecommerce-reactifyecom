@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Intro from '@/sections/Intro'
 import Products from '@/sections/Products'
+import GetAllProducts from '@/components/ProductsList'
 
 export default function Home() {
 	return (
@@ -27,6 +28,7 @@ export default function Home() {
 			</main>
 			<Intro />
 			<Products />
+			 <div className='list'><GetAllProducts/></div>
 		</>
 	)
 }

@@ -40,7 +40,7 @@ export default function ProductCard({ name, image, price }) {
 					<FontAwesomeIcon
 						icon={faStar}
 						className='unchecked'
-					/>
+					/> 
 				</div>
 				<div className='details'>
 					<h4 className='title'>{name}</h4>

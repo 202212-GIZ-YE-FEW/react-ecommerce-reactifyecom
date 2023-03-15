@@ -4,6 +4,8 @@ import Footer from './Footer'
 import Navbar from './Navbar'
 
 import { Inter } from 'next/font/google'
+import Footer from './Footer'
+import Navbar from './Navbar'
 
 
 const inter = Inter({

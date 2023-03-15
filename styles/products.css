@@ -26,10 +26,11 @@
 	flex-direction: column;
 	background-color: white;
 	padding: 0.75rem;
-	height: auto;
+	height: 300px;
 	width: 260px;
 	position: relative;
 	color: #1f1f1f;
+	
 }
 .card-cover {
 	margin: 1rem 0.5rem;
@@ -51,7 +52,7 @@
 	flex-direction: column;
 	background-color: white;
 	padding: 0.75rem;
-	height: auto;
+	height: 300px;
 	width: 250;
 	position: relative;
 	color: #1f1f1f;
@@ -60,7 +61,7 @@
 
 .card Image {
 	width: 100%;
-	padding-bottom: 60px;
+	padding-bottom: 70px;
 }
 
 .Popular {
@@ -138,6 +139,7 @@
 	flex-wrap: wrap;
 	justify-content: flex-start;
 }
+
 
 .card {
 	flex: 0 1 calc(50% - 1em);

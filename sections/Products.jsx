@@ -8,6 +8,7 @@ export default function Products() {
 	return (
 		<div>
 			<h1 className='Popular'>
+				
 				View More <i> <FontAwesomeIcon icon={fas}/> &#xf061;</i>
 			</h1>
 			<section className='list'>
@@ -26,20 +27,20 @@ export default function Products() {
 					</div>
 				</div>
 				<ProductCard
-					name='JBL Clip 4 Orange Portable Speaker'
-					image='https://api.websolutionus.com/shopo/uploads/website-images/popular-cat-banner-2022-09-20-01-15-44-7577.jpg'
-					price='$133.00'
+					name="JBL Clip 4 Orange Portable Speaker"
+					image="https://shopo-ecom.vercel.app/_next/image?url=https%3A%2F%2Fapi.websolutionus.com%2Fshopo%2Fuploads%2Fcustom-images%2Fjbl-clip-4-orange-portable-speaker-2022-09-27-03-24-27-9922.png&w=1920&q=75"
+					price="$133.00"
 				/>
 				<ProductCard
-					name='Samsung Galaxy A52 (8/128 GB)'
-					image='https://api.websolutionus.com/shopo/uploads/website-images/popular-cat-banner-2022-09-20-01-15-44-7577.jpg'
-					price='$9.99'
+					name="Samsung Galaxy A52 (8/128 GB)"
+					image="https://shopo-ecom.vercel.app/_next/image?url=https%3A%2F%2Fapi.websolutionus.com%2Fshopo%2Fuploads%2Fcustom-images%2Fsamsung-galaxy-a52-8128-gb-2022-09-26-12-12-12-9319.png&w=1920&q=75"
+					price="$9.99"
 				/>
 
 				<ProductCard
-					name='Xbox Wireless Game Controller'
-					image='https://api.websolutionus.com/shopo/uploads/website-images/popular-cat-banner-2022-09-20-01-15-44-7577.jpg'
-					price='$89.99'
+					name="Xbox Wireless Game Controller"
+					image="https://shopo-ecom.vercel.app/_next/image?url=https%3A%2F%2Fapi.websolutionus.com%2Fshopo%2Fuploads%2Fcustom-images%2Fxbox-wireless-game-controller-2022-09-26-12-20-19-1096.png&w=1920&q=75"
+					price="$89.99"
 				/>
 			</section>
 		</div>

@@ -8,7 +8,19 @@ const nextConfig = {
 				hostname: 'api.websolutionus.com',
 				port: '',
 				pathname: '/**',
+			
+			},{
+				protocol: 'https',
+				hostname: 'fakestoreapi.com',
+				port: '',
+				pathname: '/**',
 			},
+			{
+				protocol: 'https',
+				hostname: 'shopo-ecom.vercel.app',
+				port: '',
+				pathname: '/**',
+			}
 		],
 	},
 }

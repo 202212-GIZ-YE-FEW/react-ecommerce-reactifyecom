@@ -7,10 +7,18 @@
 	padding: 0;
 	box-sizing: border-box;
 	scroll-behavior: smooth;
+	
 }
 
 body {
 	@apply text-lg leading-8 text-primary-black;
+	margin: 5%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    color: var(--white);
+    background-color: rgb(241, 239, 239);
+    display: grid;
+    place-items: center;
 }
 .h2 {
 	@apply text-[32px] mb-6 tracking-[10%] uppercase;

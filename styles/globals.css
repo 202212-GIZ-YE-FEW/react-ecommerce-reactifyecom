@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body {
+	@apply text-lg leading-8 text-primary-black;
+}
+.h2 {
+	@apply text-[32px] mb-6 tracking-[10%] uppercase;
+}
+.h3 {
+	@apply font-semibold text-[26px] mb-6 leading-[46px];
+}
+.primary-button {
+	@apply rounded bg-amber-300 py-2 px-4 shadow outline-none hover:bg-amber-400  active:bg-amber-500;
+}
+.default-button {
+	@apply rounded bg-gray-100 py-2  px-4 text-black shadow outline-none hover:bg-gray-200  active:bg-gray-300;
+}
+/* 
+.text-gradient {
+	@apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6] font-bold font-primary hover:from-[#FF56F6] hover:to-[#42A6E3];
+} */
+.section {
+	@apply py-8 lg:py-24 lg:h-screen flex items-center;
+}

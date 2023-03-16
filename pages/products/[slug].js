@@ -54,9 +54,11 @@ export default function ProductLayout() {
 }
 
 // new layout for product item page, it calls the url above and then list item details
+
 const cartArray = []
 const Product = ({ product }) => {
 
+  
   function addToCart(index){
     
     const productToCart = {
@@ -110,3 +112,4 @@ const Product = ({ product }) => {
     </div>
   );
 };
+ 

@@ -54,8 +54,24 @@ export default function ProductLayout() {
 }
 
 // new layout for product item page, it calls the url above and then list item details
-
+const cartArray = []
 const Product = ({ product }) => {
+
+  function addToCart(index){
+    
+    const productToCart = {
+      "id":product.id,
+      "quantity": 1,
+      "name":product.title,
+      "imageUrl":product.image,
+      "price": product.price
+    }
+  
+    const grapedItems = JSON.parse(localStorage.getItem("items"));
+    const cartArray = [...grapedItems,productToCart]
+    localStorage.setItem("items", JSON.stringify(cartArray));
+  }
+
   if (!product) {
     return <div className="text-center">Loading...</div>;
   }
@@ -86,7 +102,7 @@ const Product = ({ product }) => {
               </span>
             </div>
           </div>
-          <button className="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          <button onClick={()=>{addToCart(product.id)}} className="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
             Add to Cart
           </button>
         </div>

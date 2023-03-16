@@ -35,10 +35,10 @@ export const data = [
 ];
 
 const CartContent = () => {
-  const [items, setCartItems] = useState(data);
-
+  const [items, setCartItems] = useState([]);
+  // console.log(items);
   function updateCart(updatedCart) {
-    console.log(updatedCart);
+    // console.log(updatedCart);
     setCartItems(updatedCart);
     localStorage.setItem("items", JSON.stringify(updatedCart));
   }

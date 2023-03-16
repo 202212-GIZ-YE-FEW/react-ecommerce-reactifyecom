@@ -46,7 +46,7 @@ export default function ProductLayout() {
     <>
       <div className="section flex items-center justify-center">
         <div className="max-w-screen-lg w-full x-4 flex flex-col items-center justify-center">
-          <Product product={product || {}} />
+          <Product product={product} />
         </div>
       </div>
     </>

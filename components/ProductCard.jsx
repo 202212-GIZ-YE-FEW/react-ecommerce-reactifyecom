@@ -1,37 +1,37 @@
-import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Image from "next/image";
-import React from "react";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
 
-export default function ProductCard({ name, image, price }) {
+import Link from "next/link";
+
+const ProductCard = ({ product }) => {
   return (
-    <>
-      <div className="card">
-        <div className="image">
-          <Image src={image} alt={name} width={268} height={300} />
+    <Link href={`/products/${product.id}`}>
+      <div className="block rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300 cursor-pointer">
+        <img
+          className="h-64 w-full object-cover"
+          src={product.image}
+          alt={product.title}
+        />
+        <div className="p-4">
+          <h2 className="text-lg font-bold mb-2">{product.title}</h2>
+          <div className="text-gray-700 mb-4">${product.price}</div>
+          <div className="flex items-center">
+            <div className="text-yellow-500">
+              {Array.from(
+                { length: Math.floor(product.rating.rate) },
+                (_, i) => (
+                  <FontAwesomeIcon key={i} icon={faStar} />
+                )
+              )}
+            </div>
+            <div className="text-gray-500 ml-2">
+              {product.rating.count} reviews
+            </div>
+          </div>
         </div>
-        <div className="starts">
-          <span className="fa fa-star checked"></span>
-          <span className="fa fa-star checked"></span>
-          <span className="fa fa-star checked"></span>
-          <span className="fa fa-star unchecked"></span>
-          <span className="fa fa-star unchecked"></span>
-          <FontAwesomeIcon icon={faStar} className="checked" />
-          <FontAwesomeIcon icon={faStar} className="checked" />
-          <FontAwesomeIcon icon={faStar} className="checked" />
-          <FontAwesomeIcon icon={faStar} className="unchecked" />
-          <FontAwesomeIcon icon={faStar} className="unchecked" />
-        </div>
-        <div className="details">
-          <h4 className="title">{name}</h4>
-          <p id="price">
-            <b>{price}</b>
-          </p>
-        </div>
-        <button type="button" className="btncart">
-          Add to cart
-        </button>
       </div>
-    </>
+    </Link>
   );
-}
+};
+
+export default ProductCard;

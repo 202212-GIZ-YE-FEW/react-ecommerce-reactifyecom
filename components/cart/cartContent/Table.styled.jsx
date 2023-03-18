@@ -45,6 +45,7 @@ export const TabRow = styled.div`
   grid-template-columns: 1.5fr 0.8fr 0.9fr 1fr 0.7fr;
   width: 100%;
   border: 1px solid #e5e7eb;
+
 `;
 export const ItemCell = styled.div`
   display: flex;
@@ -53,15 +54,19 @@ export const ItemCell = styled.div`
 `;
 export const ImageTitle = styled.div`
   padding: 18px 20px 18px 20px;
-  display: grid;
-  grid-template-columns: 0.7fr 1.3fr;
-  gap: 0px 13px;
+  // display: grid;
+  // grid-template-columns: 0.7fr 1.3fr;
+  // gap: 0px 13px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   @media only screen and (max-width: 600px) {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 0px 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 `;
 
@@ -70,6 +75,7 @@ export const ImageDiv = styled.div`
   justify-content: center;
   border: 1px solid #e5e7eb;
   padding: 7px;
+  min-width: 100px;
 `;
 
 export const QuantitiyDiv = styled.div`
@@ -78,6 +84,14 @@ text-align: center;
 height: 40px;
 display: flex;
 gap: gap: 0px 13px; 
+
+@media only screen and (max-width: 600px) {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
 `;
 
 export const ButtonsDiv = styled.div`

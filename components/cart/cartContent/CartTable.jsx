@@ -37,6 +37,7 @@ export const data = [
 const CartContent = () => {
   const [items, setCartItems] = useState([]);
   // console.log(items);
+  
   function updateCart(updatedCart) {
     // console.log(updatedCart);
     setCartItems(updatedCart);
@@ -102,23 +103,22 @@ const CartContent = () => {
                 <ItemCell>
                   <QuantitiyDiv>
                     <button
-                      className="border-2 p-2 text-center"
+                      className="w-full border-2 p-2 text-center"
                       onClick={() => {
                         increaseQuantity(i, "-");
                       }}
                     >
                       -
                     </button>
-                    <span className="border-2 p-2 text-center">
+                    <span className="w-full border-2 p-2 text-center">
                       {item.quantity}
                     </span>
                     <button
-                      className="border-2 p-2 text-center"
+                      className="w-full border-2 p-2 text-center"
                       onClick={() => {
                         increaseQuantity(i, "+");
                       }}
-                    >
-                      +
+                    >+
                     </button>
                   </QuantitiyDiv>
                 </ItemCell>

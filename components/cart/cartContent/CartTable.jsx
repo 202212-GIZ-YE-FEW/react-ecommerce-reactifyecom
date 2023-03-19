@@ -18,24 +18,24 @@ import Image from "next/image";
 // this for making data simulation to display cart items,
 // once the localStorage is ready when
 // "adding to cart", this array can be removed.
-export const data = [
-  {
-    id: 1,
-    quantity: 10,
-    name: "bottle",
-    imageUrl:
-      "https://www.petainer.com/wp-content/uploads/2021/12/0_35L-Spirit-Bottle-000843-scaled.jpg",
-    price: 10,
-  },
-  {
-    id: 12,
-    quantity: 4,
-    name: "sth",
-    imageUrl:
-      "https://www.petainer.com/wp-content/uploads/2021/12/0_35L-Spirit-Bottle-000843-scaled.jpg",
-    price: 10,
-  },
-];
+// export const data = [
+//   {
+//     id: 1,
+//     quantity: 10,
+//     name: "bottle",
+//     imageUrl:
+//       "https://www.petainer.com/wp-content/uploads/2021/12/0_35L-Spirit-Bottle-000843-scaled.jpg",
+//     price: 10,
+//   },
+//   {
+//     id: 12,
+//     quantity: 4,
+//     name: "sth",
+//     imageUrl:
+//       "https://www.petainer.com/wp-content/uploads/2021/12/0_35L-Spirit-Bottle-000843-scaled.jpg",
+//     price: 10,
+//   },
+// ];
 
 const CartContent = () => {
   const [items, setCartItems] = useState([]);

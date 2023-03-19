@@ -55,23 +55,37 @@ export default function ProductLayout() {
 
 // new layout for product item page, it calls the url above and then list item details
 
-const cartArray = []
+const cartArray = [];
 const Product = ({ product }) => {
-
-  
-  function addToCart(index){
-    
+  function addToCart(index) {
     const productToCart = {
-      "id":product.id,
-      "quantity": 1,
-      "name":product.title,
-      "imageUrl":product.image,
-      "price": product.price
-    }
-  
+      id: product.id,
+      quantity: 1,
+      name: product.title,
+      imageUrl: product.image,
+      price: product.price,
+    };
+
     const grapedItems = JSON.parse(localStorage.getItem("items"));
-    const cartArray = [...grapedItems,productToCart]
-    localStorage.setItem("items", JSON.stringify(cartArray));
+
+    if (grapedItems) {
+      grapedItems.forEach((item) => {
+        if (item.id === productToCart.id) {
+          const newGrapeditems = grapedItems.map((grapItem) => {
+            if (grapItem.id === productToCart.id) {
+              return { ...grapItem, quantity: grapItem.quantity + 1 };
+            } else return grapItem;
+          });
+          console.log("newGrapeditems", newGrapeditems);
+          localStorage.setItem("items", JSON.stringify(newGrapeditems));
+        } else {
+          const cartArray = [...grapedItems, productToCart];
+          localStorage.setItem("items", JSON.stringify(cartArray));
+        }
+      });
+    } else {
+      localStorage.setItem("items", JSON.stringify([productToCart]));
+    }
   }
 
   if (!product) {
@@ -104,7 +118,12 @@ const Product = ({ product }) => {
               </span>
             </div>
           </div>
-          <button onClick={()=>{addToCart(product.id)}} className="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          <button
+            onClick={() => {
+              addToCart(product.id);
+            }}
+            className="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          >
             Add to Cart
           </button>
         </div>
@@ -112,4 +131,3 @@ const Product = ({ product }) => {
     </div>
   );
 };
- 

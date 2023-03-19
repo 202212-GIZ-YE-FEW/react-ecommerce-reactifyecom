@@ -138,7 +138,7 @@ const CartContent = () => {
             );
           })
         ) : (
-          <p className="p-10">There're no items in the cart</p>
+          <p className="p-10">There&apos;re no items in the cart</p>
         )}
 
         {items.length > 0 ? (

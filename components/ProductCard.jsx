@@ -2,15 +2,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 import Link from "next/link";
+import Image from "next/image";
 
 const ProductCard = ({ product }) => {
   return (
     <Link href={`/products/${product.id}`}>
       <div className="block rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300 cursor-pointer">
-        <img
+        <Image
           className="h-64 w-full object-cover"
           src={product.image}
           alt={product.title}
+          width={100}
+          height={100}
         />
         <div className="p-4">
           <h2 className="text-lg font-bold mb-2">{product.title}</h2>

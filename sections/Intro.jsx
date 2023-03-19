@@ -233,7 +233,7 @@ export default function Intro() {
           </div>
           <div>
             <h1>Welcome to our store</h1>
-            <Link href="Product/">View Product</Link>
+            <Link href="/products/">View Product</Link>
           </div>
           {/*  */}
         </div>

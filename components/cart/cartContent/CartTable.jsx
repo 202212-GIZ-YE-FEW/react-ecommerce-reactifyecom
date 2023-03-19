@@ -131,7 +131,7 @@ const CartContent = () => {
               </TabRow>
             );
           }):
-          <p className="p-10">There're no items in the cart</p>
+          <p className="p-10">There are no items in the cart</p>
         }
 
       {items?

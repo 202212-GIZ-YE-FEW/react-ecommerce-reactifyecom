@@ -96,10 +96,12 @@ const Product = ({ product }) => {
     <div className="max-w-4xl mx-auto p-4">
       <div className="md:flex rounded-lg p-6 bg-white shadow-md">
         <div className="md:flex-shrink-0">
-          <img
-            className="h-48 w-full object-cover md:w-48 rounded-lg"
-            src={product.image}
-            alt={product.title}
+         
+          <Image className="h-48 w-full object-cover md:w-48 rounded-lg"
+          src={product.image}
+          alt={product.title}
+          width={100}
+          height={100}
           />
         </div>
         <div className="md:ml-6 mt-4 md:mt-0">
